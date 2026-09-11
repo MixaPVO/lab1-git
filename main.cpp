@@ -27,6 +27,7 @@ int main()
     {
         cout << "\n=== Вариант 63: километры <-> мили ===\n"
         << "Выберите пункт:\n"
+        << "0)Выход из программы\n"
         << "1)Перевести километры в мили\n"
         << "2)Перевести мили в километры\n";
         cin >> choice;
@@ -35,12 +36,16 @@ int main()
         case 1:
             cout << "Введите километры: ";
             cin >> var;
-            cout << "Мили = " << kmToMiles(var) << endl;
+            cout << "Мили = " << kmToMiles(var) << " ми" << endl;
             break;
         case 2:
             cout << "Введите мили: ";
             cin >> var;
-            cout << "Километры = " << milesToKm(var) << endl;
+            cout << "Километры = " << milesToKm(var) << " км" << endl;
+        case 0:
+            break;
+        default:
+            cout << "Такого пунтка не существует.\n";
         }
     } while (choice != 0);
     return 0;
