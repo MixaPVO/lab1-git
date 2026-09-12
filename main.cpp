@@ -6,12 +6,13 @@
 using namespace std;
 
 // ===== Расчётные функции варианта =====
-// Площадь прямоугольника со сторонами a и b
+// Функция перевода километров в мили
 double kmToMiles(double km)
 {
     return km * 0.621371;
 }
 
+//Функция перевода милей в километры
 double milesToKm(double mi)
 {
     return mi * 1.609344;
